@@ -5,6 +5,7 @@ using System.Web;
 
 namespace TwitterFeedAPI.Models
 {
+    // DTO FeedTweet
     public class FeedTweet
     {
         public long Id { get; set; }

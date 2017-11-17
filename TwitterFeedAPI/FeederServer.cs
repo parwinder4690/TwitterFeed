@@ -10,7 +10,8 @@ using System.Threading;
 
 namespace TwitterFeedAPI
 {
-    //Feed Server take get the the timeLine every 1 mintue and store in the cache so clients and get the latest timeLine.
+    //Feed Server get the the timeLine every 1 mintue and store in the cache so clients can get the latest timeLine without going to Twitter api.
+
     public class FeederServer
     {
       

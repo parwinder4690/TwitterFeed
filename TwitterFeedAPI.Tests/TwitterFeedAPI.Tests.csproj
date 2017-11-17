@@ -92,6 +92,7 @@
     <Compile Include="TestTimeLineFeedController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestFeederServer.cs" />
+    <Compile Include="TestFeedCacheManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TwitterFeedAPI\TwitterFeedAPI.csproj">

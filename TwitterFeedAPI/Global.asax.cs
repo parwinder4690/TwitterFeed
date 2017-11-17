@@ -13,7 +13,7 @@ namespace TwitterFeedAPI
         protected void Application_Start()
         {
             
-
+            //Register controller dependancies 
             RegisterBuilder();
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
@@ -41,6 +41,7 @@ namespace TwitterFeedAPI
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
 
+        //start feed server that will get twitter time line and store in cache
         public void startFeedServer()
         {
             String consumerKey = "PNLbcUJAeNC1p4VnW76lyziwA";
@@ -52,6 +53,7 @@ namespace TwitterFeedAPI
 
             IFeedCacheManager feedCacheManager = new FeedCacheManager();
             ITwitterFeedProxy feedProxy = new TwitterFeedProxy();
+
             FeederServer feederServer = new FeederServer(feedCacheManager, feedProxy);
             feederServer.feedStart();
         }

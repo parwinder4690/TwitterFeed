@@ -4,6 +4,7 @@ using TwitterFeedAPI.Models;
 
 namespace TwitterFeedAPI
 {
+    
     public interface IFeedCacheManager
     {
         void setFeedData(IList<FeedTweet> feedList);
